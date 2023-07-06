@@ -1,28 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/border"
     android:layout_height="wrap_content">
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/shopingcardview"
+        android:layout_width="359dp"
+        android:layout_height="382dp"
+        android:elevation="15dp"
+        app:cardBackgroundColor="#F308A3E8"
+        app:cardCornerRadius="15dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="12dp">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="298dp"
-        android:layout_height="91dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="5dp"
-        android:gravity="center"
-        android:text="header data"
-        android:textSize="50dp" />
 
-    <TextView
-        android:id="@+id/textviewsceand"
-        android:layout_width="297dp"
-        android:layout_height="82dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="100dp"
-        android:gravity="center"
-        android:text="description "
-        android:textSize="50dp" />
-</androidx.cardview.widget.CardView>
+        <ImageView
+            android:id="@+id/user_img"
+            android:layout_width="match_parent"
+            android:layout_height="183dp"
+            android:scaleType="fitXY"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="50dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="220dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:text="id" />
+
+        <TextView
+            android:id="@+id/textView_tittle"
+            android:layout_width="185dp"
+            android:layout_height="87dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="200dp"
+            android:gravity="center"
+            android:text="Tittle" />
+
+        <TextView
+            android:id="@+id/textView_info"
+            android:layout_width="304dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="320dp"
+            android:gravity="center"
+            android:text="USER INFORMATION"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
